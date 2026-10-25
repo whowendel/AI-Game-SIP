@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Cartoon 3D Button Shadows */
+  .btn-cartoon-green {
+    background-color: #22c55e;
+    color: white;
+    border-bottom: 5px solid #15803d;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+    transition: all 0.1s ease;
+  }
+  .btn-cartoon-green:hover {
+    background-color: #16a34a;
+    transform: translateY(-1px);
+  }
+  .btn-cartoon-green:active {
+    transform: translateY(3px);
+    border-bottom-width: 2px;
+  }
+
+  .btn-cartoon-blue {
+    background-color: #38bdf8;
+    color: white;
+    border-bottom: 5px solid #0284c7;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+    transition: all 0.1s ease;
+  }
+  .btn-cartoon-blue:hover {
+    background-color: #0ea5e9;
+    transform: translateY(-1px);
+  }
+  .btn-cartoon-blue:active {
+    transform: translateY(3px);
+    border-bottom-width: 2px;
+  }
+
+  .btn-cartoon-yellow {
+    background-color: #fbbf24;
+    color: #78350f;
+    border-bottom: 5px solid #d97706;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+    transition: all 0.1s ease;
+  }
+  .btn-cartoon-yellow:hover {
+    background-color: #f59e0b;
+    transform: translateY(-1px);
+  }
+  .btn-cartoon-yellow:active {
+    transform: translateY(3px);
+    border-bottom-width: 2px;
+  }
+
+  .btn-cartoon-red {
+    background-color: #f87171;
+    color: white;
+    border-bottom: 5px solid #dc2626;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+    transition: all 0.1s ease;
+  }
+  .btn-cartoon-red:hover {
+    background-color: #ef4444;
+    transform: translateY(-1px);
+  }
+  .btn-cartoon-red:active {
+    transform: translateY(3px);
+    border-bottom-width: 2px;
+  }
+
+  /* Paper & Folder textures */
+  .folder-shadow {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.35), 0 8px 10px -6px rgba(0, 0, 0, 0.25);
+  }
+  
+  .dashed-stitch {
+    border: 3px dashed #d97706;
+  }
+
+  .airmail-stripes {
+    background: repeating-linear-gradient(
+      -45deg,
+      #ef4444,
+      #ef4444 15px,
+      #ffffff 15px,
+      #ffffff 25px,
+      #3b82f6 25px,
+      #3b82f6 40px,
+      #ffffff 40px,
+      #ffffff 50px
+    );
+  }
+}
+
+/* Custom scrollbars for cozy dossiers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fef3c7;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d97706;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b45309;
+}
